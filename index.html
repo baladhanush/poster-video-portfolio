@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Showcase - Posters & Videos</title>
+    <icon href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Balamurugan Creations</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#posters">Posters</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Creative World</h1>
+        <p>Explore my collection of visually stunning posters and engaging video creations.</p>
+    </section>
+
+    <section class="slideshow-container" id="posters">
+        <h2>Posters</h2>
+        <div class="slides"><img src="img/poster1.jpg" alt="Creative Poster 1"></div>
+        <div class="slides"><img src="img/poster2.jpg" alt="Creative Poster 2"></div>
+        <div class="slides"><img src="img/poster3.jpg" alt="Creative Poster 3"></div>
+        <div class="slides"><img src="img/poster4.jpg" alt="Creative Poster 4"></div>
+        <div class="slides"><img src="img/poster5.jpg" alt="Creative Poster 5"></div>
+        <div class="slides"><img src="img/poster6.jpg" alt="Creative Poster 6"></div>
+        
+        <button class="prev" onclick="plusSlides(-1)">❮</button>
+        <button class="next" onclick="plusSlides(1)">❯</button>
+    </section>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <section class="gallery" id="videos">
+        <h2>Videos</h2>
+        <div class="grid">
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="videos/video2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Let’s collaborate on creative projects! Reach out via email or social media.</p>
+        <div class="social-icons">
+            <strong>
+            <a href="https://www.linkedin.com/in/bala-murugan-v1900" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="mailto:baladanush1911@gmail.com"><i class='bx bx-envelope'></i></a>
+            <a href="tel:9345813065"><i class='bx bxs-phone'></i></a></strong>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Balamurugan Creations | All Rights Reserved</p>
+    </footer>
+
+    <script src="slideshow.js"></script>
+</body>
+</html>
